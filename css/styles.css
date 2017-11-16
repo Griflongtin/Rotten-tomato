@@ -1,11 +1,23 @@
+@font-face {
+  font-family: MyFirstFont;
+  src: url("font/Watchword_regular_demo.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: MyFirstFont;
+
 }
 
 body {
   background-color: gray;
+}
+
+a {
+  color: #136CB2;
+  text-decoration: none;
 }
 
 .container {
@@ -17,7 +29,6 @@ body {
 #header {
   background-color: #3A9425;
   height: 164px;
-
 }
 
 .black-bar {
@@ -50,7 +61,7 @@ body {
   width: 70%;
   min-height: 100vh;
   margin: 15px;
-  border: 1px solid gray;
+  border: 1px solid #cacaca;
   padding: 10px 0px 10px;
 }
 
@@ -63,18 +74,22 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
 .best-img {
   margin-top: 10px;
 }
+
 .best-img img {
 float: left;
 margin-right: 10px;
+margin-left: 10px;
 }
 
 .best-img h4 {
   text-transform: uppercase;
   padding: 0px 10px 10px;
 }
+
 .best-img p{
   padding: 10px;
 }
@@ -83,35 +98,47 @@ margin-right: 10px;
   clear: both;
   width: 100%;
 }
+
 .row {
   width: ;
   border-bottom: 2px lightgray solid;
   margin: 0px 10px 0px;
 }
+
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
+
 .col-rank {
   text-align: center;
   width: 50px;
   float: left;
 }
+
 .col-Rating {
   text-align: center;
-  width: 50px;
+  width: 80px;
   float: left;
 }
+
+.col-Rating img {
+  float: left;
+}
+
 .col-title {
   margin-left: 10px;
   float: left;
 }
+
 .col-reviews {
   width: 70px;
   float: right;
   font-size: 0.8em;
 }
-.col-rank, .col-title, .col-Rating,.col-reviews {
+
+.col-rank , .col-title, .col-Rating,.col-reviews {
   padding: 10px 12px 10px;
+  text-transform: uppercase;
 }
