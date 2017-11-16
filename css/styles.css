@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+
+.container {
+  background-color: white;
+  margin: 40px;
+  min-height: 1000px;
+}
+
+#header {
+  background-color: #3A9425;
+  height: 164px;
+
+}
+
+.black-bar {
+  background-color: black;
+  width: 100%;
+  height: 25px;
+  margin-top: 1px;
+}
+
+.black-bar p {
+  color: yellow;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding: 4px;
+  padding-left: 25px;
+}
+
+#tomato {
+  z-index: 0;
+}
+
+#logo {
+  z-index: 1;
+  margin-left: -145px;
+  margin-bottom: 30px;
+}
+
+.content {
+  width: 70%;
+  min-height: 100vh;
+  margin: 15px;
+  border: 1px solid gray;
+  padding: 10px 0px 10px;
+}
+
+.yellow {
+  background-color: yellow;
+  width: 38%;
+  padding: 15px;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.best-img {
+  margin-top: 10px;
+}
+.best-img img {
+float: left;
+margin-right: 10px;
+}
+
+.best-img h4 {
+  text-transform: uppercase;
+  padding: 0px 10px 10px;
+}
+.best-img p{
+  padding: 10px;
+}
+
+#list {
+  clear: both;
+  width: 100%;
+}
+.row {
+  width: ;
+  border-bottom: 2px lightgray solid;
+  margin: 0px 10px 0px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-rank {
+  text-align: center;
+  width: 50px;
+  float: left;
+}
+.col-Rating {
+  text-align: center;
+  width: 50px;
+  float: left;
+}
+.col-title {
+  margin-left: 10px;
+  float: left;
+}
+.col-reviews {
+  width: 70px;
+  float: right;
+  font-size: 0.8em;
+}
+.col-rank, .col-title, .col-Rating,.col-reviews {
+  padding: 10px 12px 10px;
+}
