@@ -28,7 +28,7 @@ a {
 
 #header {
   background-color: #3A9425;
-  height: 164px;
+  height: 83px;
 }
 
 .black-bar {
@@ -49,12 +49,14 @@ a {
 
 #tomato {
   z-index: 0;
+  width: 94px;
 }
 
 #logo {
   z-index: 1;
-  margin-left: -145px;
-  margin-bottom: 30px;
+  width: 163px;
+  margin-left: -74px;
+  margin-bottom: 12px;
 }
 
 .content {
@@ -63,6 +65,13 @@ a {
   margin: 15px;
   border: 1px solid #cacaca;
   padding: 10px 0px 10px;
+  float: left;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .yellow {
@@ -141,4 +150,29 @@ margin-left: 10px;
 .col-rank , .col-title, .col-Rating,.col-reviews {
   padding: 10px 12px 10px;
   text-transform: uppercase;
+}
+
+#form {
+  width: 25%;
+  height: auto;
+  float: right;
+}
+
+input {
+  width: 85%;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#button {
+  width: 60px;
+  height: 25px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: slategrey;
+  border: inset 2px teal;
 }
